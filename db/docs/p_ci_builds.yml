@@ -1,0 +1,19 @@
+---
+table_name: p_ci_builds
+classes:
+- Ci::Bridge
+- Ci::Bridge::Partitioned
+- Ci::Build
+- Ci::Build::Partitioned
+- Ci::Processable
+- Ci::Processable::Partitioned
+- CommitStatus
+- CommitStatus::Partitioned
+- GenericCommitStatus
+- GenericCommitStatus::Partitioned
+feature_categories:
+- continuous_integration
+description: Routing table for ci_builds
+introduced_by_url: https://gitlab.com/gitlab-org/gitlab/-/merge_requests/120873
+milestone: '16.1'
+gitlab_schema: gitlab_ci

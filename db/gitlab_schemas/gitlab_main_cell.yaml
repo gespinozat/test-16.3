@@ -1,0 +1,14 @@
+name: gitlab_main_cell
+description: Schema for all Cell-local tables, ex. namespaces, projects, etc.
+allow_cross_joins:
+  - gitlab_shared
+  - gitlab_main
+allow_cross_transactions:
+  - gitlab_internal
+  - gitlab_shared
+  - gitlab_main
+  # Temporarily allow cross-DB transactions between clusterwide and cell schemas
+  # This is to be removed once we annotate all cross-DBs between those
+  - gitlab_main_clusterwide
+allow_cross_foreign_keys:
+  - gitlab_main

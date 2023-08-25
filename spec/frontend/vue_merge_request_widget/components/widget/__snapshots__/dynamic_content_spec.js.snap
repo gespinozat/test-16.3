@@ -1,0 +1,71 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`~/vue_merge_request_widget/components/widget/dynamic_content.vue renders given data 1`] = `
+"<div class=\\"gl-display-flex gl-border-t gl-py-3 gl-pl-7 gl-align-items-baseline\\">
+  <!---->
+  <div class=\\"gl-w-full gl-min-w-0\\">
+    <div class=\\"gl-display-flex\\">
+      <div class=\\"gl-mb-2\\"><strong class=\\"gl-display-block\\">This is a header</strong><span class=\\"gl-display-block\\">This is a subheader</span></div>
+      <div class=\\"gl-ml-auto gl-display-flex gl-align-items-baseline\\">
+        <help-popover-stub options=\\"[object Object]\\" icon=\\"information-o\\" triggerclass=\\"\\" class=\\"\\">
+          <p class=\\"gl-mb-0\\">Widget help popover content</p>
+          <!---->
+        </help-popover-stub>
+        <!---->
+      </div>
+    </div>
+    <div class=\\"gl-display-flex gl-align-items-baseline\\">
+      <status-icon-stub level=\\"2\\" name=\\"MyWidget\\" iconname=\\"success\\"></status-icon-stub>
+      <div class=\\"gl-w-full gl-display-flex\\">
+        <div class=\\"gl-display-flex gl-flex-grow-1\\">
+          <div class=\\"gl-display-flex gl-flex-grow-1 gl-align-items-baseline\\">
+            <div>
+              <p class=\\"gl-mb-0 gl-mr-1\\">Main text for the row</p>
+              <gl-link-stub href=\\"https://gitlab.com\\">Optional link to display after text</gl-link-stub>
+              <!---->
+            </div>
+            <gl-badge-stub size=\\"md\\" variant=\\"info\\" iconsize=\\"md\\">
+              Badge is optional. Text to be displayed inside badge
+            </gl-badge-stub>
+          </div>
+          <!---->
+          <p class=\\"gl-m-0 gl-font-sm\\">Optional: Smaller sub-text to be displayed below the main text</p>
+        </div>
+        <ul class=\\"gl-m-0 gl-p-0 gl-list-style-none\\">
+          <li>
+            <div class=\\"gl-display-flex gl-align-items-center\\" data-qa-selector=\\"child_content\\">
+              <!---->
+              <div class=\\"gl-w-full gl-min-w-0\\">
+                <div class=\\"gl-display-flex\\">
+                  <div class=\\"gl-mb-2\\"><strong class=\\"gl-display-block\\">Child row header</strong>
+                    <!---->
+                  </div>
+                  <!---->
+                </div>
+                <div class=\\"gl-display-flex gl-align-items-baseline\\">
+                  <!---->
+                  <div class=\\"gl-w-full gl-display-flex\\">
+                    <div class=\\"gl-display-flex gl-flex-grow-1\\">
+                      <div class=\\"gl-display-flex gl-flex-grow-1 gl-align-items-baseline\\">
+                        <div>
+                          <p class=\\"gl-mb-0 gl-mr-1\\">This is recursive. It will be listed in level 3.</p>
+                          <!---->
+                          <!---->
+                        </div>
+                        <!---->
+                      </div>
+                      <!---->
+                      <!---->
+                    </div>
+                    <!---->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>"
+`;
